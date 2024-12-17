@@ -43,23 +43,25 @@ class _StreamHomePageState extends State<StreamHomePage> {
     bgColor = eventColor;
   });
    });
-   
+
     @override
     void initState(){
       super.initState();
       colorStream = ColorStream();
       changeColor();
     }
+
+  }
+
   @override
   Widget build(BuildContext context) {
-
- return Scaffold(
+    return Scaffold(
   appBar: AppBar(
     title: const Text('Stream'),
   ),
   body: Container (decoration: BoxDecoration(color: bgColor),
   ));
+  
 
   }
-
-}
+  }
